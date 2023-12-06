@@ -3,16 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { Container, Row, Col, Card, Form } from "react-bootstrap";
 
 function App() {
-  // Generate code function to convert currency number to IDR format
-  const generateIDR = (number) => {
-    const formatIDR = new Intl.NumberFormat('id-ID', {
-      style: 'currency',
-      currency: 'IDR',
-      minimumFractionDigits: 0,
-    });
-
-    return formatIDR.format(number);
-  };
+ 
 
   // Create state for count and setCount
   const [harga, setharga] = useState(10_000_000);
